@@ -12,8 +12,8 @@ import retrofit2.http.Headers;
  */
 public interface IFilms {
 
-    @Headers("token : f90384c1-5a26-4a76-9f3b-fc0b37fe06f8")
-    @GET(Constants.BASE_URL)
+    @Headers("Token: f90384c1-5a26-4a76-9f3b-fc0b37fe06f8")
+    @GET(Constants.MOVIE_ENDPOINT)
     Call<Film> getFilms();
 
 }
